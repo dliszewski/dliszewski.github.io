@@ -1,5 +1,5 @@
 site:
-  name: Nadia Liszewska
+  name: Nadja Liszewska
   site: 'https://dliszewski.github.io'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Nadia Liszewska - psychoterapeuta
+    default: Nadja Liszewska - psychoterapeuta
     template: '%s — AstroWind'
-  description: "Nadia Liszewska - psychoterapeut, psycholog, CBT, psychoterapia"
+  description: "Nadja Liszewska - psychoterapeut, psycholog, CBT, psychoterapia"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Nadia Liszewska - psychoterapeuta
+    site_name: Nadja Liszewska - psychoterapeuta
     images:
       - url: '~/assets/images/default.png'
         width: 1200
