@@ -171,8 +171,5 @@ export const footerData = {
 //     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
 //     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
 //   ],
-  footNote: `
-
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
-  `,
+  footNote: `Wszelkie prawa zastrzeżone. · All rights reserved.`,
 };
