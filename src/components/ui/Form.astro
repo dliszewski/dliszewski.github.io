@@ -1,11 +1,20 @@
 ---
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
+import { SITE } from 'astrowind:config';
 
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
+const successURL = SITE.site + '/success'
 ---
 
-<form>
+<form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  id="form"
+  class="needs-validation"
+  data-astro-reload
+  novalidate
+>
   {
     inputs &&
       inputs.map(
@@ -84,4 +93,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
       </div>
     )
   }
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  <input type="hidden" name="access_key" value="4eebd7f6-629c-4068-827f-4412657e8bd0" />
+  <input type="hidden" name="redirect" value={successURL}>
 </form>

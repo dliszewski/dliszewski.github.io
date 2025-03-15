@@ -1,0 +1,40 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+
+const {
+  title = 'Moja dostępność',
+  subtitle = '',
+  tagline = '',
+  callToAction,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+
+ <div class="max-w-[800px] mx-auto px-4 py-8">
+     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&showPrint=0&showTitle=0&showTabs=0&showCalendars=0&src=ZDQ1Y2E5ODY3MmEyZWMyODQ1NzU4OWQ4NjhmN2QxYjRjZmI5ZTMyNDUxMDE1NDVkZWMzZGVkNmE5MzM2OGU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238E24AA"
+         style="border:solid
+         1px #777"
+         width="800"
+         height="600"
+         frameborder="0"
+         scrolling="no"
+     />
+ </div>
+  {
+    callToAction && (
+      <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
+        <Button {...callToAction} />
+      </div>
+    )
+  }
+</WidgetWrapper>
+
