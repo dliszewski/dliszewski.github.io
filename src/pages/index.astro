@@ -1,14 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
@@ -24,11 +20,11 @@ const metadata = {
   <Hero
     id="hero"
     title="Nadja Liszewska"
-    tagline="Psychoterapeuta w nurcie CBT"
+    tagline="Psychoterapeutka w nurcie CBT"
     actions={[{ variant: 'primary', text: 'Umów się na wizytę', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      Jestem dyplomowanym psychologiem i terapeutą poznawczo-behawioralnym w trakcie certyfikacji z 5 letnim doświadczeniem.
+      Jestem dyplomowanym psychologiem i psychoterapeutką poznawczo-behawioralnym w trakcie certyfikacji z 5 letnim doświadczeniem.
     </Fragment>
   </Hero>
 

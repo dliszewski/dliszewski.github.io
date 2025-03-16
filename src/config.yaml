@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Nadja Liszewska - psychoterapeuta
+    default: Nadja Liszewska - psychoterapeutka
     template: '%s — AstroWind'
-  description: "Nadja Liszewska - psychoterapeut, psycholog, CBT, psychoterapia"
+  description: "Nadja Liszewska - psychoterapeutka, psycholog, CBT, psychoterapia"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Nadja Liszewska - psychoterapeuta
+    site_name: Nadja Liszewska - psychoterapeutka
     images:
       - url: '~/assets/images/default.png'
         width: 1200
