@@ -120,6 +120,11 @@ export const headerData = {
     //     text: 'Opinie klientów',
     //     href: '/#testimonials'
     // }
+    ,
+    {
+        text: 'Terminy',
+        href: '/contact#calendar-link'
+    }
   ],
   actions: [{ text: 'Kontakt', href: '/contact#hero' }],
 };
