@@ -114,11 +114,12 @@ export const headerData = {
 //           href: getPermalink('astro', 'tag'),
 //         },
 //       ],
-    },
-    {
-        text: 'Opinie klientów',
-        href: '/#testimonials'
     }
+    // ,
+    // {
+    //     text: 'Opinie klientów',
+    //     href: '/#testimonials'
+    // }
   ],
   actions: [{ text: 'Kontakt', href: '/contact#hero' }],
 };
@@ -156,7 +157,7 @@ export const footerData = {
     {
       title: 'Kontakt',
       links: [
-        { text: 'n.liszewska.psychoterapia@gmail.com', href:'mailto:n.liszewska.psychoterapia@gmail.com'},
+        { text: 'n.liszewska.psychoterapia@gmail.com', href:'mailto:n.liszewska.psychoteria@gmail.com'},
         { text: 'Polityka prywatności', href: '/privacy' },
       ],
     },
