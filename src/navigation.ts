@@ -162,7 +162,7 @@ export const footerData = {
     {
       title: 'Kontakt',
       links: [
-        { text: 'n.liszewska.psychoterapia@gmail.com', href:'mailto:n.liszewska.psychoteria@gmail.com'},
+        { text: 'n.liszewska.psychoteria@gmail.com', href:'mailto:n.liszewska.psychoteria@gmail.com'},
         { text: 'Polityka prywatności', href: '/privacy' },
       ],
     },
